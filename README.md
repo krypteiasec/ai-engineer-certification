@@ -1,78 +1,100 @@
-# Krypteia AI Engineer Certification, companion code
+<p align="center">
+  <a href="https://krypteiasec.com/academy">
+    <img src="assets/hero.jpg" alt="Krypteia AI Engineer Certification" width="100%">
+  </a>
+</p>
 
-The hands-on code for a complete, free, zero-to-hireable AI Engineering certification: nineteen courses, 151 chapters, one runnable Python lab plus a Jupyter notebook for every single chapter, and two real trained model checkpoints. Everything runs offline and deterministically, so a lab either proves its point on your machine or it fails loudly.
+<h1 align="center">AI Engineer Certification</h1>
 
-This repository is the code layer. The full interactive certification (prose teaching, narrated videos, quizzes, in-browser labs, and the free certificate) lives on the site at [krypteiasec.com/academy](https://krypteiasec.com/academy). This is everything you clone, read, and run yourself in a terminal and in Jupyter.
+<p align="center">
+  <b>Zero to hireable. Completely free.</b><br>
+  19 courses &nbsp;·&nbsp; 151 chapters &nbsp;·&nbsp; 151 runnable labs &nbsp;·&nbsp; build a real LLM from scratch
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/price-free-7a1f1f?style=flat-square" alt="Free">
+  <img src="https://img.shields.io/badge/license-MIT-5c1717?style=flat-square" alt="MIT">
+  <img src="https://img.shields.io/badge/courses-19-b53d3d?style=flat-square" alt="19 courses">
+  <img src="https://img.shields.io/badge/labs-151-b53d3d?style=flat-square" alt="151 labs">
+  <img src="https://img.shields.io/badge/setup-none-5c1717?style=flat-square" alt="No setup">
+</p>
+
+<p align="center">
+  <a href="https://krypteiasec.com/academy"><b>Start the certification →</b></a>
+</p>
+
+---
+
+### ▶ Watch the intro
+
+<video src="https://github.com/krypteiasec/ai-engineer-certification/raw/main/assets/intro.mp4" controls muted width="100%"></video>
+
+If the video does not play inline, [**click here to watch it**](assets/intro.mp4).
+
+---
+
+Everyone says AI will take your job. This certification is built on the opposite bet: that the people who can *build* with AI become unstoppable. It takes you from Python and the math you need all the way to shipping AI agents and building a language model by hand, with a runnable lab for every single chapter. No paywall, no login, no catch.
+
+The full interactive certification, prose teaching, narrated videos, quizzes, in-browser labs, and a free certificate, lives at **[krypteiasec.com/academy](https://krypteiasec.com/academy)**. This repository is the code layer: everything you clone, read, and run yourself.
 
 ## What is inside
 
 ```
 labs/
   academy_llm.py        a tiny deterministic offline stand-in "LLM" the teaching labs import
-  _models/              two REAL trained checkpoints + the training code (see below)
+  _models/              two REAL trained checkpoints + the training code
   foundations/          Course 0 labs
   <course>/             one folder of labs per course (prompt-engineering, rag, ...)
-  lab-*.py              Course 1 (Build a Tiny LLM From Scratch) labs
-notebooks/              151 Jupyter notebooks, one per lab, named by lab id
-courses.export.json     the machine-readable catalog the site consumes (every course, chapter, lab)
-COURSES.md              the human catalog: every course, chapter, and its lab + notebook
-requirements.txt        torch, numpy, jupyter (only needed for the PyTorch + notebook labs)
+notebooks/              151 Jupyter notebooks, one per lab
+courses.export.json     the machine-readable catalog the site consumes
+COURSES.md              the human catalog: every course, chapter, and its lab
+requirements.txt        torch, numpy, jupyter (only for the PyTorch + notebook labs)
 ```
 
-The chapter videos and the interactive course are served on the site, not stored in this repo. See `COURSES.md` for the complete course-by-course, chapter-by-chapter map.
+## The curriculum
 
-## How to use it
+**Core track (Courses 0 to 13):** Python and the math you need, building a tiny LLM by hand, prompt engineering, RAG, agents and MCP, evaluation, application engineering, training and fine-tuning, transformer internals, production and LLMOps, safety and security, multimodal, interview prep, and a capstone portfolio.
 
-Two ways to work through a lab, both first-class.
+**Applied track (Courses 14 to 18):** building agents with Claude Code, the Claude API and Agent SDK, certification prep, setting up a personal AI operating system, and a flagship mastery course.
 
-### 1. Terminal
+Full detail in [`COURSES.md`](COURSES.md).
 
-Every lab is a standalone script that prints an invariant proving the concept and exits 0.
+## Run it
+
+Two ways to work through any lab, both first-class.
+
+**Terminal.** Every lab is a standalone script that prints an invariant proving the concept and exits 0.
 
 ```bash
 python3 labs/prompt-engineering/pe2-few-shot.py
 python3 labs/rag/rag6-rag-pipeline.py
-python3 labs/ai-security/se8-red-team-harness.py
 ```
 
-Most labs are pure standard library and need no install. The PyTorch labs (Course 1 LLM Fundamentals, Course 7 Training, Course 8 Transformers) and the trained models need `pip install -r requirements.txt`.
+Most labs are pure standard library and need no install. The PyTorch labs and the trained models need `pip install -r requirements.txt`.
 
-### 2. Jupyter notebooks
-
-Each lab has a matching notebook, split into cells with the explanation above each step, so you run one idea at a time.
+**Jupyter.** Each lab has a matching notebook, split into cells with the explanation above each step.
 
 ```bash
 pip install -r requirements.txt
 jupyter lab notebooks/
 ```
 
-Open, for example, `notebooks/rag6-rag-pipeline.ipynb` and run it top to bottom.
+Or run **117 of the 151 labs with zero setup, right in your browser** at [krypteiasec.com/academy](https://krypteiasec.com/academy) (Python compiled to WebAssembly).
 
 ## The trained models (`labs/_models/`)
 
 Two genuinely trained checkpoints you can load and generate from, not mocks:
 
-- `tinygpt.pt`: a from-scratch character-level GPT (the same tiny architecture you build by hand in Course 1), trained until the loss actually falls and it produces coherent text.
-- `lora_adapter.pt`: a real LoRA fine-tune of that base model on a downstream domain, with the base weights frozen.
+- `tinygpt.pt`: a from-scratch character-level GPT (the same tiny architecture you build by hand in Course 1).
+- `lora_adapter.pt`: a real LoRA fine-tune of that base model, with the base weights frozen.
 
 ```bash
-python3 labs/_models/verify.py          # loads both, generates, asserts, prints MODELS OK
-python3 labs/_models/train_tinygpt.py   # retrain the base from scratch (about 15s on Apple Silicon)
-python3 labs/_models/finetune_lora.py   # retrain the LoRA adapter
+python3 labs/_models/verify.py          # loads both, generates, prints MODELS OK
+python3 labs/_models/train_tinygpt.py   # retrain the base from scratch (~15s on Apple Silicon)
 ```
-
-## The offline "LLM" (`labs/academy_llm.py`)
-
-The courses that teach prompt-in / text-out patterns (Prompt Engineering, Agents, Evals, App Engineering, Security, and more) import one small deterministic stand-in model. It is not a real model. It makes the mechanics visible and reproducible with no network and no API key: few-shot examples measurably steer its output, temperature changes sampling, a tool call routes, a judge scores, embeddings support retrieval. Every lesson that uses it can predict and assert on its behavior. When you are ready for a real model, the same interface points at a local or hosted LLM with the labs unchanged.
-
-## The curriculum
-
-The core track (Courses 0 to 13) takes you from Python and the math you need, through building a tiny LLM by hand, prompt engineering, RAG, agents and MCP, evaluation, application engineering, training and fine-tuning, the transformer internals, production and LLMOps, safety and security, multimodal, interview prep, and a capstone portfolio.
-
-The applied track (Courses 14 to 18) adds building agents with Claude Code, the Claude API and Agent SDK, certification prep, setting up and running a personal AI operating system, and a flagship mastery course that teaches the full personalized setup the way its creator teaches it.
-
-Full detail in `COURSES.md`.
 
 ## License
 
-MIT. See `LICENSE`. The curriculum and code are free to read, run, fork, and teach from.
+MIT, see [`LICENSE`](LICENSE). The curriculum and code are free to read, run, fork, and teach from.
+
+<p align="center"><sub>Built by <a href="https://krypteiasec.com">Krypteia Sec</a> · an independent educational resource on AI and agentic engineering.</sub></p>
