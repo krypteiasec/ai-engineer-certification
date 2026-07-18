@@ -11,7 +11,7 @@ Run: python3 modules/academy-content/labs/foundations/f1-python-basics.py
 import sys
 
 # STEP 1: variables hold values. Python figures out the type for you.
-name = "Kai"          # a string of text
+name = "Aria"          # a string of text
 chapters = 8          # an integer
 pi = 3.14159          # a floating point number
 learning = True       # a boolean, True or False

@@ -35,7 +35,7 @@ def name_da(cfg, chosen, voice):
     identity_md = f"# {chosen} (DA Identity)\n\nI am {chosen}, your Digital Assistant. I will always be with you.\n"
     return identity_md
 
-chosen_name = "Kai"    # the name a sample user picks; yours is your call
+chosen_name = "Aria"    # the name a sample user picks; yours is your call
 identity_md = name_da(config, chosen_name, "voice-sample-01")
 print("")
 print("STEP 2: set da.name and rewrite the identity paragraph")

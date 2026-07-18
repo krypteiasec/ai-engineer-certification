@@ -52,7 +52,7 @@ overrides_applied = all(persona[k] == v for k, v in overrides.items())
 # STEP 4: render identity.md from a template with placeholders filled.
 TEMPLATE = "# {name} (DA Identity)\n\n## Personality\n{trait_lines}\n"
 trait_lines = "\n".join(f"- {t}: {persona[t]}" for t in TRAITS)
-identity_md = TEMPLATE.format(name="Kai", trait_lines=trait_lines)
+identity_md = TEMPLATE.format(name="Aria", trait_lines=trait_lines)
 rendered = ("{" not in identity_md) and all(str(persona[t]) in identity_md for t in TRAITS)
 print("")
 print("STEP 4: rendered identity.md (first 4 trait lines)")
