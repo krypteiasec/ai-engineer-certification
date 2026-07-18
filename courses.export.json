@@ -7,7 +7,7 @@
     {
       "id": "foundations",
       "title": "Foundations: Python and Math for AI",
-      "blurb": "",
+      "blurb": "From zero. Real Python you run yourself and only the math you need (vectors, matrices, probability, softmax, gradients). 8 chapters, live.",
       "order": 0,
       "lessons": [
         {
@@ -575,7 +575,7 @@
     {
       "id": "llm-fundamentals",
       "title": "LLM Fundamentals: Build a Tiny LLM From Scratch",
-      "blurb": "",
+      "blurb": "Build a real language model by hand: tokenizer, embeddings, attention, transformer, training loop, generation. The depth vertical. 10 chapters, live.",
       "order": 1,
       "lessons": [
         {
@@ -1340,7 +1340,7 @@
     {
       "id": "prompt-engineering",
       "title": "Prompt Engineering",
-      "blurb": "",
+      "blurb": "The first lever and highest-frequency daily skill: few-shot, chain-of-thought, structured output, caching, and eval-driven optimization.",
       "order": 2,
       "lessons": [
         {
@@ -1908,7 +1908,7 @@
     {
       "id": "rag",
       "title": "RAG and Embeddings",
-      "blurb": "",
+      "blurb": "The #1 production pattern (70% of teams). Embeddings, chunking, vector search, re-ranking, end-to-end RAG, and the failure modes that bite.",
       "order": 3,
       "lessons": [
         {
@@ -2476,7 +2476,7 @@
     {
       "id": "agents-mcp",
       "title": "Agents, Tools and MCP",
-      "blurb": "",
+      "blurb": "The 2026 frontier: the ReAct loop, tool and function calling, memory, and the Model Context Protocol (build an MCP server).",
       "order": 4,
       "lessons": [
         {
@@ -3044,7 +3044,7 @@
     {
       "id": "evals",
       "title": "Evaluation and Testing",
-      "blurb": "",
+      "blurb": "Evals replace unit tests. Golden datasets, code graders vs LLM-as-judge, regression gates, hallucination scoring. Table-stakes.",
       "order": 5,
       "lessons": [
         {
@@ -3612,7 +3612,7 @@
     {
       "id": "app-engineering",
       "title": "LLM Application Engineering",
-      "blurb": "",
+      "blurb": "The literal daily job: APIs and SDKs, streaming, structured output, retries and rate limits, cost control, multi-provider routing, observability.",
       "order": 6,
       "lessons": [
         {
@@ -4180,7 +4180,7 @@
     {
       "id": "training",
       "title": "Training and Fine-tuning",
-      "blurb": "",
+      "blurb": "Shape a base model: datasets, loss curves, SFT and LoRA/QLoRA, DPO, and the judgment of when to fine-tune vs prompt vs RAG.",
       "order": 7,
       "lessons": [
         {
@@ -4748,7 +4748,7 @@
     {
       "id": "transformers",
       "title": "Transformers Deep Dive",
-      "blurb": "",
+      "blurb": "Explain the internals cold: positional encodings (RoPE), attention variants, BPE, KV cache, scaling laws. The T-shape depth vertical.",
       "order": 8,
       "lessons": [
         {
@@ -5490,7 +5490,7 @@
     {
       "id": "production",
       "title": "AI Engineering in Production",
-      "blurb": "",
+      "blurb": "Ship and operate: serving, quantization (AWQ/GGUF), vLLM/KV cache, eval-gated CI/CD, cost and drift monitoring, LLMOps.",
       "order": 9,
       "lessons": [
         {
@@ -6058,7 +6058,7 @@
     {
       "id": "ai-security",
       "title": "AI Safety and Security",
-      "blurb": "",
+      "blurb": "The OWASP LLM Top 10, prompt-injection offense and defense, guardrails, and red-teaming your own app. Ada's differentiator.",
       "order": 10,
       "lessons": [
         {
@@ -6626,7 +6626,7 @@
     {
       "id": "multimodal",
       "title": "Multimodal AI",
-      "blurb": "",
+      "blurb": "Vision-language, image generation, speech (STT/TTS), and multimodal RAG. The converging edge.",
       "order": 11,
       "lessons": [
         {
@@ -7054,7 +7054,7 @@
     {
       "id": "interview-prep",
       "title": "Interview Prep and System Design",
-      "blurb": "",
+      "blurb": "Ace the interview: the real loop, from-scratch coding, LLM system design, take-home patterns, behavioral, and question banks.",
       "order": 12,
       "lessons": [
         {
@@ -7622,7 +7622,7 @@
     {
       "id": "capstones",
       "title": "Capstone Projects",
-      "blurb": "",
+      "blurb": "What gets you hired: 3-5 deployed, evaluated builds. RAG assistant, tool-calling agent, eval pipeline, MCP assistant, self-red-teamed app.",
       "order": 13,
       "lessons": [
         {
@@ -8120,7 +8120,7 @@
     {
       "id": "claude-code-agents",
       "title": "Claude Code and Agentic Builds",
-      "blurb": "",
+      "blurb": "Build agents the way Claude Code does: the agentic loop, the tool contract, ReAct, subagents and delegation, MCP, hooks and guardrails, orchestrating a fleet, and a complete agentic workflow. 8 chapters, offline labs.",
       "order": 14,
       "lessons": [
         {
@@ -8688,7 +8688,7 @@
     {
       "id": "claude-code-sdk",
       "title": "Claude Code SDK and API",
-      "blurb": "",
+      "blurb": "Drive Claude from code: the Messages API and Agent SDK end to end. Typed responses, system and roles, streaming, tool use, the agent loop (tool_runner), structured output, prompt caching and token counting, then a small shippable app.",
       "order": 15,
       "lessons": [
         {
@@ -9256,7 +9256,7 @@
     {
       "id": "cca-f",
       "title": "CCA-F Certification Prep",
-      "blurb": "",
+      "blurb": "Pass the Claude certification: the weighted exam domains, scenarios, and recurring wrong-answer traps, each drilled with a runnable lab and a mock exam scored at the real pass line. 8 chapters.",
       "order": 16,
       "lessons": [
         {
@@ -9912,7 +9912,7 @@
     {
       "id": "lifeos",
       "title": "LifeOS: Setup to Advanced",
-      "blurb": "",
+      "blurb": "The personal AI operating system end to end: current state to ideal state, install, TELOS, the Algorithm, skills, hooks, Pulse, and composing it into a daily OS. 8 chapters.",
       "order": 17,
       "lessons": [
         {
@@ -10480,7 +10480,7 @@
     {
       "id": "lifeos-mastery",
       "title": "LifeOS Mastery: The Complete Setup",
-      "blurb": "",
+      "blurb": "The flagship LifeOS course, taught the way its creator teaches it: why before how, and the full personalized setup end to end. Install and upgrade, name your DA, identity and a quantified 12-trait personality, TELOS in two parts, the /interview, migrate your context, and run it all through the Algorithm as a daily OS. 8 chapters, offline labs.",
       "order": 18,
       "lessons": [
         {
