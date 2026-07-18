@@ -54,7 +54,7 @@
                 "You cannot know the type"
               ],
               "answer": 1,
-              "why": "Right. Python is dynamically typed: it infers the type from the value, so name = 'Kai' is a string and chapters = 8 is an integer, with no declaration."
+              "why": "Right. Python is dynamically typed: it infers the type from the value, so name = 'Aria' is a string and chapters = 8 is an integer, with no declaration."
             },
             {
               "q": "What does an f-string like f\"{x} min\" do?",
