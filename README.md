@@ -27,9 +27,9 @@
 
 ### ▶ Watch the intro
 
-[<img src="assets/intro-poster.jpg" alt="Watch the intro" width="100%">](assets/intro.mp4)
+<video src="https://github.com/user-attachments/assets/92776c71-69fa-415c-846c-ed583088418e" controls muted width="100%"></video>
 
-<p align="center"><a href="assets/intro.mp4"><b>▶ Watch the intro (33s)</b></a>. Click the still above to play.</p>
+If the player does not load, [watch the intro here](https://github.com/user-attachments/assets/92776c71-69fa-415c-846c-ed583088418e).
 
 ---
 
