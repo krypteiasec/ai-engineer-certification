@@ -25,7 +25,43 @@ Everyone says AI will take your job. This certification is built on the opposite
 
 The full interactive certification, prose teaching, narrated videos, quizzes, in-browser labs, and a free certificate, lives at **[krypteiasec.com/academy](https://krypteiasec.com/academy)**. This repository is the code layer: everything you clone, read, and run yourself.
 
-## What is inside
+## What's inside
+
+**19 courses · 151 chapters · a runnable lab, a Jupyter notebook, and a narrated video for every single chapter · two really-trained model checkpoints.** Free, no login, no paywall. Run 117 of the 151 labs right in your browser at **[krypteiasec.com/academy](https://krypteiasec.com/academy)**.
+
+### Core track · become the engineer (Courses 0 to 13)
+
+| # | Course | What you build | Ch. |
+|:-:|--------|----------------|:-:|
+| 0 | **Foundations: Python & Math for AI** | Python from zero plus the math you actually need: vectors, matrices, probability, softmax, gradients | 8 |
+| 1 | **Build a Tiny LLM From Scratch** | A real language model by hand: tokenizer, embeddings, attention, transformer, training loop, generation | 10 |
+| 2 | **Prompt Engineering** | Few-shot, chain-of-thought, structured output, prompt caching, eval-driven optimization | 8 |
+| 3 | **RAG & Embeddings** | Embeddings, chunking, vector search, re-ranking, end-to-end RAG, and the failure modes that bite | 8 |
+| 4 | **Agents, Tools & MCP** | The ReAct loop, tool and function calling, agent memory, and MCP | 8 |
+| 5 | **Evaluation & Testing** | Evals as the new unit tests: graders, datasets, regression | 8 |
+| 6 | **LLM Application Engineering** | APIs and SDKs, streaming, structured output, retries, the daily job | 8 |
+| 7 | **Training & Fine-tuning** | Datasets, loss curves, SFT and LoRA/QLoRA, DPO | 8 |
+| 8 | **Transformers Deep Dive** | Positional encodings (RoPE), attention variants, the internals cold | 8 |
+| 9 | **AI Engineering in Production** | Serving, quantization (AWQ/GGUF), vLLM and KV-cache, LLMOps | 8 |
+| 10 | **AI Safety & Security** | OWASP LLM Top 10, prompt-injection offense and defense, guardrails | 8 |
+| 11 | **Multimodal AI** | Vision-language, image generation, speech (STT/TTS), multimodal RAG | 6 |
+| 12 | **Interview Prep & System Design** | The real interview loop, from-scratch coding, LLM system design | 8 |
+| 13 | **Capstone Projects** | 3 to 5 deployed, evaluated builds that actually get you hired | 7 |
+
+### Applied track · Claude, agents & your own AI OS (Courses 14 to 18)
+
+| # | Course | What you build | Ch. |
+|:-:|--------|----------------|:-:|
+| 14 | **Claude Code & Agentic Builds** | Build agents the way Claude Code does: the agentic loop and tool contract | 8 |
+| 15 | **Claude Code SDK & API** | Drive Claude from code: the Messages API and Agent SDK end to end | 8 |
+| 16 | **CCA-F Certification Prep** | The weighted Claude exam domains, scenarios, and practice | 8 |
+| 17 | **LifeOS: Setup to Advanced** | A personal AI operating system end to end: current state to ideal state | 8 |
+| 18 | **LifeOS Mastery: The Complete Setup** | The flagship LifeOS course, taught the way its creator teaches it | 8 |
+
+Full chapter-by-chapter detail in **[`COURSES.md`](COURSES.md)**.
+
+<details>
+<summary><b>Repository layout</b></summary>
 
 ```
 labs/
@@ -39,13 +75,7 @@ COURSES.md              the human catalog: every course, chapter, and its lab
 requirements.txt        torch, numpy, jupyter (only for the PyTorch + notebook labs)
 ```
 
-## The curriculum
-
-**Core track (Courses 0 to 13):** Python and the math you need, building a tiny LLM by hand, prompt engineering, RAG, agents and MCP, evaluation, application engineering, training and fine-tuning, transformer internals, production and LLMOps, safety and security, multimodal, interview prep, and a capstone portfolio.
-
-**Applied track (Courses 14 to 18):** building agents with Claude Code, the Claude API and Agent SDK, certification prep, setting up a personal AI operating system, and a flagship mastery course.
-
-Full detail in [`COURSES.md`](COURSES.md).
+</details>
 
 ## Run it
 
