@@ -27,7 +27,7 @@
 
 ### ▶ Watch the intro
 
-<video src="https://github.com/user-attachments/assets/92776c71-69fa-415c-846c-ed583088418e" controls muted width="100%"></video>
+<video src="https://github.com/user-attachments/assets/92776c71-69fa-415c-846c-ed583088418e" controls width="100%"></video>
 
 If the player does not load, [watch the intro here](https://github.com/user-attachments/assets/92776c71-69fa-415c-846c-ed583088418e).
 
