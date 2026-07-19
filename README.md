@@ -1,6 +1,4 @@
-<p align="center">
-  <video src="https://github.com/user-attachments/assets/92776c71-69fa-415c-846c-ed583088418e" controls width="100%"></video>
-</p>
+<video src="https://github.com/user-attachments/assets/92776c71-69fa-415c-846c-ed583088418e" controls width="100%"></video>
 
 <h1 align="center">AI Engineer Certification</h1>
 
