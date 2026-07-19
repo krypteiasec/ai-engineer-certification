@@ -27,9 +27,9 @@
 
 ### ▶ Watch the intro
 
-<video src="https://github.com/krypteiasec/ai-engineer-certification/raw/main/assets/intro.mp4" controls muted width="100%"></video>
+[<img src="assets/intro-poster.jpg" alt="Watch the intro" width="100%">](assets/intro.mp4)
 
-If the video does not play inline, [**click here to watch it**](assets/intro.mp4).
+<p align="center"><a href="assets/intro.mp4"><b>▶ Watch the intro (33s)</b></a>. Click the still above to play.</p>
 
 ---
 
